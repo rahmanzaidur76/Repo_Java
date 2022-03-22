@@ -1,7 +1,4 @@
-package Momework5;
-
-import java.util.Arrays;
-import java.util.Locale;
+package Homework5;
 
 public class Homework5 {
     public static void main(String[] args) {
