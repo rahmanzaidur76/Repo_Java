@@ -139,50 +139,36 @@ public static int sumOfDigits(int num) {
      *
      *
      */
-   public static String printCommons(String[] inputArr1, String[] inputArr2) {
-       String result = "";
-       for (int i = 0; i < inputArr1.length; i++) {
+   public static void printCommons(String[] inputArr1, String[] inputArr2) {
+           for (int i = 0; i < inputArr1.length; i++) {
            for (int j = 0; j < inputArr2.length; j++) {
-               if (inputArr1[i].equals(inputArr2[j])) {
-                   result += (inputArr1[i].equals(inputArr2[j]));
-               }
+               if (inputArr1[i].equals(inputArr2[j]))
+                   System.out.println(inputArr1[i]);
            }
-       }    return result;
 
        }
+
+   }
 
 
     public static void main(String[] args) {
 
-        String[] inputArr1 = {"happY", "king", "peace", "living standard"};
-        String[] inputArr2 = {"king kong", "Happy", "PEACE"};
+        String[] input1 = {"happY", "king", "peace", "living standard"};
+        String[] input2 = {"king kong", "Happy", "PEACE"};
 
 
-        System.out.println(printCommons(inputArr1,inputArr2));
+       printCommons(input1,input2);
+
+
+
+
+
+
+
+
+
+
+
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
